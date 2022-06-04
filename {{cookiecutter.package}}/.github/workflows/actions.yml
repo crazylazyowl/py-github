@@ -1,0 +1,32 @@
+name: Flake8 & PyTest
+
+on: [push]
+
+jobs:
+  flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+      - name: Setup Python
+        uses: actions/setup-python@v3.1.2
+        with:
+          python-version: "3.9"
+      - name: Install Tox
+        run: pip --no-cache-dir install tox
+      - name: Run liter
+        run: tox -e flake8
+  
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+      - name: Setup Python
+        uses: actions/setup-python@v3.1.2
+        with:
+          python-version: "3.9"
+      - name: Install Tox
+        run: pip --no-cache-dir install tox
+      - name: Run tests
+        run: tox -e pytest
