@@ -1,0 +1,19 @@
+# ide artifacts
+.idea/
+.vscode/
+# py artifacts
+__pycache__/
+.coverage
+.env/
+.pytest_cache/
+.tox/
+*.egg-info/
+coverage.xml
+dist/
+# configs for development purposes only
+config.json
+config.yml
+# macos artifacts
+.DS_Store
+
+# Is there something that I missed?..
