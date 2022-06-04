@@ -23,7 +23,6 @@ setuptools.setup(
     version=version(),
     url="{{cookiecutter.url}}",
     author="{{cookiecutter.author}}",
-    # author_email="{{cookiecutter.email}}",
     python_requires=">={{cookiecutter.python}}",
     packages=setuptools.find_packages(),
     install_requires=requirements(),

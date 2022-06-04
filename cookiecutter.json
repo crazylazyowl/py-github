@@ -1,9 +1,9 @@
 {
-    "author": "crazylazyowl",
     "project_name": "My Project",
-    "project_slub": "{{cookiecutter.project_name.lower().replace(' ', '-')}}",
+    "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '-')}}",
     "package": "{{cookiecutter.project_slug.replace('-', '_')}}",
-    "url": "https://github.com/{{cookiecutter.author}}/{{project_slug}}",
+    "author": "crazylazyowl",
+    "url": "https://github.com/{{cookiecutter.author}}/{{cookiecutter.project_slug}}",
     "python": "3.9",
     "version": "0.0.1"
 }
